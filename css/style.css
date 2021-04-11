@@ -1544,6 +1544,7 @@ h2:after{
 		align-items: center;
 	}
 	.photo__content-top{
+		padding: 25px 0 0 0;
 		width: 280px;
 	}
 	.photo__content-image{
