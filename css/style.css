@@ -2801,7 +2801,10 @@ form{
 	.forma__buttom{
 		display: block;
 		margin: 50px 0 0 0;
-		text-align: center;
+	}
+	
+	.forma__price-titel{
+		margin: 0;
 	}
 
 	.forma__prc{
@@ -2813,7 +2816,7 @@ form{
 	}
 
 	.schedule{
-		margin: 30px 0 0 0;
+		margin: 30px 0 0 45px;
 
 	}
 	.option__size{
