@@ -1544,7 +1544,6 @@ h2:after{
 		align-items: center;
 	}
 	.photo__content-top{
-		padding: 25px 0 0 0;
 		width: 280px;
 	}
 	.photo__content-image{
@@ -2711,20 +2710,26 @@ form{
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	width: 124px;
-	height: 31px;
+	height: 30px;
 	background-color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .forma__price{
 	margin-bottom: 15px;
 }
 
+.price{
+	font-size: 20px;
+	margin-right: 20px;
+}
+
 .uah{
 	font-family: 'Roboto', sans-serif;
+	margin: 0 5px 0 0;
 
-	display: flex;
-	margin: 7px 5px 0 0;
-	justify-content: flex-end;
 }
 
 .schedule{
@@ -2802,7 +2807,7 @@ form{
 		display: block;
 		margin: 50px 0 0 0;
 	}
-	
+
 	.forma__price-titel{
 		margin: 0;
 	}
@@ -2813,6 +2818,7 @@ form{
 		width: 124px;
 		height: 31px;
 		background-color: #fff;
+
 	}
 
 	.schedule{
