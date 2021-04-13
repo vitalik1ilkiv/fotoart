@@ -111,21 +111,86 @@ let tab = function(){
 tab();
 
 
-/*let coll = document.getElementsByClassName('portfolio__btn-comunication');
-for (let i = 0; i < coll.length; i++) {
-	coll[i].addEventListener('click', function() {
-		this.classList.toggle('active');
-		let content = this.nextElementSibling;
-		if (content.style.maxHeight) {
-			content.style.maxHeight = null;
-		} else {
-			content.style.maxHeight = content.scrollHeight + 'px'
-		}
-	})
-}*/
-
 $(document).ready(function() {
 	$('.portfolio__btn-comunication').click(function(event){
 		$('.portfolio__btn-comunication,.nav-comunication,.portfolio__btn-comunication-text,.portfolio__btn-comunication-act-non,.portfolio__btn-comunication-act,.portfolio__btn-comunication-img').toggleClass('comunication-active');
 	});
 });
+
+
+
+$( ".option__size_one" )
+  .change(function () {
+   var str =  document.querySelector(".price");
+   var n = document.querySelector(".option__size_one").options.selectedIndex;
+   var val = document.querySelector(".option__size_one").options[n].value;
+   $( ".option__size_one" ).each(function() {
+   	var str =  document.querySelector(".price");
+   	var n = document.querySelector(".option__size_one").options.selectedIndex;
+   	var val = document.querySelector(".option__size_one").options[n].value;
+      str.textContent = val;
+   });
+  })
+.change();
+
+$( ".option__size_two" )
+  .change(function () {
+   var str =  document.querySelector(".price");
+   var n = document.querySelector(".option__size_two").options.selectedIndex;
+   var val = document.querySelector(".option__size_two").options[n].value;
+   $( ".option__size_two" ).each(function() {
+   	var str =  document.querySelector(".price");
+   	var n = document.querySelector(".option__size_two").options.selectedIndex;
+   	var val = document.querySelector(".option__size_two").options[n].value;
+      str.textContent = val;
+   });
+  })
+.change();
+
+$( ".option__size_three" )
+  .change(function () {
+   var str =  document.querySelector(".price");
+   var n = document.querySelector(".option__size_three").options.selectedIndex;
+   var val = document.querySelector(".option__size_three").options[n].value;
+   $( ".option__size" ).each(function() {
+   	var str =  document.querySelector(".price");
+   	var n = document.querySelector(".option__size_three").options.selectedIndex;
+   	var val = document.querySelector(".option__size_three").options[n].value;
+      str.textContent = val;
+   });
+  })
+.change();
+
+
+
+/*$(function(){
+	$(".option__size_one").change(function(){
+	 var course = $(".option__size_one option:selected").val();
+	 $("#bh").val(course);
+	})
+})
+
+$(function(){
+	$(".option__size_two").change(function(){
+	 var course = $(".option__size_two option:selected").val();
+	 $("#bh").val(course);
+	})
+})
+$(function(){
+	$(".option__size_three").change(function(){
+	 var course = $(".option__size_three option:selected").val();
+	 $("#bh").val(course);
+	})
+})*/
+/*
+$( ".option__size" )
+  .change(function () {
+   var str;
+   $( ".option__size" ).each(function() {
+      str = element.getAttribute(data-price);
+   });
+   $( ".price" ).text( str );
+  })
+.change();
+*/
+
