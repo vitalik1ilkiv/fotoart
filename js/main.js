@@ -121,43 +121,28 @@ $(document).ready(function() {
 
 $( ".option__size_one" )
   .change(function () {
-   var str =  document.querySelector(".price");
-   var n = document.querySelector(".option__size_one").options.selectedIndex;
-   var val = document.querySelector(".option__size_one").options[n].value;
-   $( ".option__size_one" ).each(function() {
-   	var str =  document.querySelector(".price");
-   	var n = document.querySelector(".option__size_one").options.selectedIndex;
-   	var val = document.querySelector(".option__size_one").options[n].value;
-      str.textContent = val;
-   });
+	   var str =  document.querySelector(".price");
+	   var n = document.querySelector(".option__size_one").options.selectedIndex;
+	   var val = document.querySelector(".option__size_one").options[n].value;
+	   str.textContent = val;
   })
 .change();
 
 $( ".option__size_two" )
   .change(function () {
-   var str =  document.querySelector(".price");
-   var n = document.querySelector(".option__size_two").options.selectedIndex;
-   var val = document.querySelector(".option__size_two").options[n].value;
-   $( ".option__size_two" ).each(function() {
-   	var str =  document.querySelector(".price");
-   	var n = document.querySelector(".option__size_two").options.selectedIndex;
-   	var val = document.querySelector(".option__size_two").options[n].value;
-      str.textContent = val;
-   });
+	   var str =  document.querySelector(".price");
+	   var n = document.querySelector(".option__size_two").options.selectedIndex;
+	   var val = document.querySelector(".option__size_two").options[n].value;
+	  	str.textContent = val;
   })
 .change();
 
 $( ".option__size_three" )
   .change(function () {
-   var str =  document.querySelector(".price");
-   var n = document.querySelector(".option__size_three").options.selectedIndex;
-   var val = document.querySelector(".option__size_three").options[n].value;
-   $( ".option__size" ).each(function() {
-   	var str =  document.querySelector(".price");
-   	var n = document.querySelector(".option__size_three").options.selectedIndex;
-   	var val = document.querySelector(".option__size_three").options[n].value;
-      str.textContent = val;
-   });
+	   var str =  document.querySelector(".price");
+	   var n = document.querySelector(".option__size_three").options.selectedIndex;
+	   var val = document.querySelector(".option__size_three").options[n].value;
+	  	str.textContent = val;
   })
 .change();
 
