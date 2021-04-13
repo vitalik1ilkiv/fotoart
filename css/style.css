@@ -1238,7 +1238,7 @@ h2:after{
 		z-index: 2;
 	}
 	.portrait__titel{
-		font-size: 18px;
+		font-size: 22px;
 		width: 285px;
 	}
 
@@ -1919,29 +1919,29 @@ h2:after{
 	}
 
 	.trigger-img_one{
-		width: 80px;
-		height: 60px;
+		width: 65px;
+		height: 41px;
 		position: absolute;
-		top: 5px;
-		left: 30px;
+		top: 14px;
+		left: 36px;
 	}
 	.trigger-img_two{
-		width: 80px;
-		height: 60px;
+		width: 79px;
+		height: 56px;
 		position: absolute;
 		top: 0px;
 		left: 30px;
 	}
 	.trigger-img_three{
-		width: 80px;
+		width: 76px;
 		height: 60px;
 		position: absolute;
 		top: 5px;
 		left: 30px;
 	}
 	.trigger-img_four{
-		width: 50px;
-		height: 50px;
+		width: 55px;
+		height: 55px;
 		position: absolute;
 		top: 5px;
 		left: 40px;
@@ -2722,8 +2722,9 @@ form{
 }
 
 .price{
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
-	margin-right: 20px;
+	margin-right: 50px;
 }
 
 .uah{
@@ -2745,13 +2746,13 @@ form{
 }
 
 .forma__image{
-	height: 427px;
+	height: 497px;
 
 }
 
 .forma__image img{
 	display: inline-block;
-	height: 432px;
+	height: 100%;
 }
 
 
