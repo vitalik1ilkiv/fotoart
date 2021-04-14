@@ -118,14 +118,13 @@ $(document).ready(function() {
 });
 
 
-
 $( ".option__size_one" )
-  .change(function () {
-	   var str =  document.querySelector(".price");
+  	.change(function () {
+	  var str =  document.querySelector(".price");
 	   var n = document.querySelector(".option__size_one").options.selectedIndex;
 	   var val = document.querySelector(".option__size_one").options[n].value;
 	   str.textContent = val;
-  })
+  	})
 .change();
 
 $( ".option__size_two" )
@@ -134,6 +133,7 @@ $( ".option__size_two" )
 	   var n = document.querySelector(".option__size_two").options.selectedIndex;
 	   var val = document.querySelector(".option__size_two").options[n].value;
 	  	str.textContent = val;
+	  	console.log(val);
   })
 .change();
 
@@ -147,35 +147,33 @@ $( ".option__size_three" )
 .change();
 
 
+$(".forma__orientation-row-item_one")
+	.click(function () {
+		var str =  document.querySelector(".price");
+		str.textContent = "";
+	})
+	$(".forma__orientation-row-item_two")
+	.click(function () {
+		var str =  document.querySelector(".price");
+		str.textContent = "";
+	})
+	$(".forma__orientation-row-item_three")
+	.click(function () {
+		var str =  document.querySelector(".price");
+		str.textContent = "";
+	})
 
-/*$(function(){
-	$(".option__size_one").change(function(){
-	 var course = $(".option__size_one option:selected").val();
-	 $("#bh").val(course);
-	})
-})
+	function myFunctionOne() {
+  		document.getElementById("opt-size1").selected = "true";
+	}
 
-$(function(){
-	$(".option__size_two").change(function(){
-	 var course = $(".option__size_two option:selected").val();
-	 $("#bh").val(course);
-	})
-})
-$(function(){
-	$(".option__size_three").change(function(){
-	 var course = $(".option__size_three option:selected").val();
-	 $("#bh").val(course);
-	})
-})*/
-/*
-$( ".option__size" )
-  .change(function () {
-   var str;
-   $( ".option__size" ).each(function() {
-      str = element.getAttribute(data-price);
-   });
-   $( ".price" ).text( str );
-  })
-.change();
-*/
+	function myFunctionTwo() {
+  		document.getElementById("opt-size2").selected = "true";
+	}
+
+	function myFunctionThree() {
+  		document.getElementById("opt-size3").selected = "true";
+	}
+
+
 
