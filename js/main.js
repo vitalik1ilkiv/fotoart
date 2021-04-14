@@ -117,51 +117,111 @@ $(document).ready(function() {
 	});
 });
 
+$(".select___style")
+.change(function(){
+	
+	var n = document.querySelector(".select___style").options.selectedIndex;
+	var val = document.querySelector(".select___style").options[n].value;
+	if(val === "2"){
+		$( ".option__size_one" )
+  		.change(function () {
+	   	var str =  document.querySelector(".price");
+	   	var n = document.querySelector(".option__size_one").options.selectedIndex;
+	   	var val = document.querySelector(".option__size_one").options[n].value;
+	   	var valNamber = Number(val);
+			var priceArt = valNamber + 20;
+			str.textContent = priceArt;
+  		})
+		.change();
 
-$( ".option__size_one" )
-  	.change(function () {
-	  var str =  document.querySelector(".price");
-	   var n = document.querySelector(".option__size_one").options.selectedIndex;
-	   var val = document.querySelector(".option__size_one").options[n].value;
-	   str.textContent = val;
-  	})
-.change();
+		$(".forma__orientation-row-item_one")
+		.click(function () {
+			var str =  document.querySelector(".price");
+			str.textContent = "";
+		})
 
-$( ".option__size_two" )
-  .change(function () {
-	   var str =  document.querySelector(".price");
-	   var n = document.querySelector(".option__size_two").options.selectedIndex;
-	   var val = document.querySelector(".option__size_two").options[n].value;
-	  	str.textContent = val;
-	  	console.log(val);
-  })
-.change();
+		$( ".option__size_two" )
+  		.change(function () {
+	   	var str =  document.querySelector(".price");
+	   	var n = document.querySelector(".option__size_two").options.selectedIndex;
+	   	var val = document.querySelector(".option__size_two").options[n].value;
+	  		var valNamber = Number(val);
+			var priceArt = valNamber + 20;
+			str.textContent = priceArt;
+  		})
+		.change();
 
-$( ".option__size_three" )
-  .change(function () {
-	   var str =  document.querySelector(".price");
-	   var n = document.querySelector(".option__size_three").options.selectedIndex;
-	   var val = document.querySelector(".option__size_three").options[n].value;
-	  	str.textContent = val;
-  })
-.change();
+		$(".forma__orientation-row-item_two")
+			.click(function () {
+			var str =  document.querySelector(".price");
+			str.textContent = "";
+		})
+
+		$( ".option__size_three" )
+  		.change(function () {
+	   	var str =  document.querySelector(".price");
+	   	var n = document.querySelector(".option__size_three").options.selectedIndex;
+	   	var val = document.querySelector(".option__size_three").options[n].value;
+	  		var valNamber = Number(val);
+			var priceArt = valNamber + 20;
+			str.textContent = priceArt;
+  		})
+		.change();
+
+		$(".forma__orientation-row-item_three")
+			.click(function () {
+			var str =  document.querySelector(".price");
+			str.textContent = "";
+		})
+		
+	} else if(val === "1")
+	{
+		$( ".option__size_one" )
+  			.change(function () {
+	   	var str =  document.querySelector(".price");
+	   	var n = document.querySelector(".option__size_one").options.selectedIndex;
+	   	var val = document.querySelector(".option__size_one").options[n].value;
+	   	str.textContent = val;
+  		})
+		.change();
+
+		$( ".option__size_two" )
+  			.change(function () {
+	   		var str =  document.querySelector(".price");
+	   		var n = document.querySelector(".option__size_two").options.selectedIndex;
+	   		var val = document.querySelector(".option__size_two").options[n].value;
+	  			str.textContent = val;
+  			})
+			.change();
+
+		$( ".option__size_three" )
+  			.change(function () {
+	   		var str =  document.querySelector(".price");
+	   		var n = document.querySelector(".option__size_three").options.selectedIndex;
+	   		var val = document.querySelector(".option__size_three").options[n].value;
+	  			str.textContent = val;
+  			})
+			.change();
 
 
-$(".forma__orientation-row-item_one")
-	.click(function () {
-		var str =  document.querySelector(".price");
-		str.textContent = "";
-	})
-	$(".forma__orientation-row-item_two")
-	.click(function () {
-		var str =  document.querySelector(".price");
-		str.textContent = "";
-	})
-	$(".forma__orientation-row-item_three")
-	.click(function () {
-		var str =  document.querySelector(".price");
-		str.textContent = "";
-	})
+		$(".forma__orientation-row-item_one")
+			.click(function () {
+			var str =  document.querySelector(".price");
+			str.textContent = "";
+		})
+		$(".forma__orientation-row-item_two")
+			.click(function () {
+			var str =  document.querySelector(".price");
+			str.textContent = "";
+		})
+		$(".forma__orientation-row-item_three")
+			.click(function () {
+			var str =  document.querySelector(".price");
+			str.textContent = "";
+		})
+	}
+})
+
 
 	function myFunctionOne() {
   		document.getElementById("opt-size1").selected = "true";
