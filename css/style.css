@@ -2357,6 +2357,180 @@ h2:after{
 		height: 13px;
 	}
 }
+/*
+
+.forma__wrap{
+	display: flex;
+	margin: 260px 0 185px 0;
+	height: 425px;
+}
+
+form{
+	width: 600px;
+	background: #F0F0F0;
+	padding: 0 0 0 30px;
+}
+.button__wrap{
+	text-align: center;
+}
+
+.forma__download{
+	width: 265px;
+	height: 40px;
+	background: #FFE818;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 150%;
+	color: #000000;
+	margin: 20px 0 0 0;
+}
+
+.forma__row{
+	display: flex;
+	width: 565px;
+	flex-wrap: wrap;
+	margin: 25px 0 0 0;
+}
+
+.forma__select-size{
+
+}
+
+.forma__select-size-titel{
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.option__size{
+	width: 220px;
+	font-family: 'Roboto', sans-serif;
+	padding: 7px 0 8px 15px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+
+
+
+
+.bold{
+	font-weight: 500;
+	font-size: 18px;
+	color: #000000;
+}
+
+.forma__orientation{
+	margin: 30px 0 0 0;
+}
+
+.forma__orientation-titel{
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.forma__orientation-row{
+	display: flex;
+}
+
+.forma__orientation-row-item{
+	width: 57px;
+	height: 57px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 25px 0 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);	
+	border-radius: 5px;
+}
+
+.forma__orientation-row-item:last-child{
+	margin: 0 0 0 0;
+
+}
+
+.forma__checkbox_one{
+	width: 260px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 15px 0 0 40px;
+	line-height: 160%;
+}
+
+.forma__checkbox_two{
+	width: 260px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 60px 0 0 50px;
+	line-height: 160%;
+}
+
+.forma__style{
+	margin: 22px 0 0 0;
+}
+
+.forma__style-titel{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.select___style{
+	width: 219px;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 5px 0 5px 11px;
+}
+
+.forma__buttom{
+	display: flex;
+	justify-content: flex-end;
+	margin: 5px;
+}
+
+.forma__price-titel{
+	margin: 0 0 0 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.forma__prc{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	width: 124px;
+	height: 31px;
+}
+
+.schedule{
+	width: 148px;
+	height: 40px;
+	background: #FFE818;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 150%;
+	color: #000000;
+	margin: 0 40px 0 30px;
+}
+*/
 
 .forma__titel{
 	display: none;
@@ -2370,7 +2544,7 @@ h2:after{
 form{
 	width: 600px;
 	padding: 30px;
-	height: 421px;
+	min-height: 421px;
 	background-color: #F0F0F0;
 
 }
@@ -2573,7 +2747,7 @@ form{
 }
 
 .forma__image{
-	height: 425px;
+	min-height: 425px;
 
 }
 
