@@ -117,134 +117,56 @@ $(document).ready(function() {
 	});
 });
 
-$(".select___style")
-.change(function(){
-	document.getElementById("opt-size1").selected = "true";
-	document.getElementById("opt-size2").selected = "true";
-	document.getElementById("opt-size3").selected = "true";
-	var n = document.querySelector(".select___style").options.selectedIndex;
-	var val = document.querySelector(".select___style").options[n].value;
-	if(val === "2"){
-		
-		$( ".option__size_one" )
-  		.change(function () {
-	   	var str =  document.querySelector(".price");
-	   	var n = document.querySelector(".option__size_one").options.selectedIndex;
-	   	var val = document.querySelector(".option__size_one").options[n].value;	   	
-	   	var valNamber = Number(val);
-	   	var priceArt = valNamber + 20;
-	   	if(document.getElementById("opt-size1").selected === "true"){	   		
-	   		str.textContent ="";
-	   	}else
-			str.textContent = priceArt;
-  		})
-		.change();
-
-		$(".forma__orientation-row-item_one")
-		.click(function () {
-			var str =  document.querySelector(".price");
-			str.textContent = "";
-		})
-
-		$( ".option__size_two" )
-  		.change(function () {
-	   	var str =  document.querySelector(".price");
-	   	var n = document.querySelector(".option__size_two").options.selectedIndex;
-	   	var val = document.querySelector(".option__size_two").options[n].value;
-	  		var valNamber = Number(val);
-			var priceArt = valNamber + 20;
-			str.textContent = priceArt;
-  		})
-		.change();
-
-		$(".forma__orientation-row-item_two")
-			.click(function () {
-			var str =  document.querySelector(".price");
-			str.textContent = "";
-		})
-
-		$( ".option__size_three" )
-  		.change(function () {
-	   	var str =  document.querySelector(".price");
-	   	var n = document.querySelector(".option__size_three").options.selectedIndex;
-	   	var val = document.querySelector(".option__size_three").options[n].value;
-	  		var valNamber = Number(val);
-			var priceArt = valNamber + 20;
-			str.textContent = priceArt;
-  		})
-		.change();
-
-		$(".forma__orientation-row-item_three")
-			.click(function () {
-			var str =  document.querySelector(".price");
-			str.textContent = "";
-		})
-		
-	} else if(val === "1")
-	{
-		$( ".option__size_one" )
-  			.change(function () {
-	   	var str =  document.querySelector(".price");
-	   	var n = document.querySelector(".option__size_one").options.selectedIndex;
-	   	var val = document.querySelector(".option__size_one").options[n].value;
-	   	str.textContent = val;
-  		})
-		.change();
-
-		$( ".option__size_two" )
-  			.change(function () {
-	   		var str =  document.querySelector(".price");
-	   		var n = document.querySelector(".option__size_two").options.selectedIndex;
-	   		var val = document.querySelector(".option__size_two").options[n].value;
-	  			str.textContent = val;
-  			})
-			.change();
-
-		$( ".option__size_three" )
-  			.change(function () {
-	   		var str =  document.querySelector(".price");
-	   		var n = document.querySelector(".option__size_three").options.selectedIndex;
-	   		var val = document.querySelector(".option__size_three").options[n].value;
-	  			str.textContent = val;
-  			})
-			.change();
-
-
-		$(".forma__orientation-row-item_one")
-			.click(function () {
-			var str =  document.querySelector(".price");
-			str.textContent = "";
-		})
-		$(".forma__orientation-row-item_two")
-			.click(function () {
-			var str =  document.querySelector(".price");
-			str.textContent = "";
-		})
-		$(".forma__orientation-row-item_three")
-			.click(function () {
-			var str =  document.querySelector(".price");
-			str.textContent = "";
-		})
-	}
-})
-
 
 function myFunctionOne() {
-  			document.getElementById("opt-size1").selected = "true";
-  			document.getElementById("style").selected = "true";
+  			$('.option__size.is-active').val('').change();
+  			$('.price').text('');
 		}
 
-		function myFunctionTwo() {
-  			document.getElementById("opt-size2").selected = "true";
-  			document.getElementById("style").selected = "true";
-		}
-
-		function myFunctionThree() {
-  			document.getElementById("opt-size3").selected = "true";
-  			document.getElementById("style").selected = "true";
-		}
+		
 
 
 
+var price;
+var priceStyle;
+var priceSize;
+var priceFast;
+var pricePack;
+
+// цикл
+ //при зміні любої змінної
 
 
+
+//end
+
+$(document).ready(function() {
+$('.change_price').change(function() {
+	priceStyle = Number($('.select___style').val());
+	priceSize = Number($('.option__size.is-active').val());
+	console.log(priceSize);
+	if ($('#Urgency').is(':checked')){
+	var priceFast = Number($('#Urgency').val());
+		//priceFast  = 20;
+	}else{
+		priceFast = 0;
+	}
+	
+	if ($('#Packaging').is(':checked')){
+	var pricePack = Number($('#Packaging').val());
+
+	}else{
+		pricePack = 0;
+	}
+	
+	price = priceStyle + priceSize + pricePack + priceFast;
+	
+ 	//console.log(priceStyle);
+ 	//console.log(priceSize);
+ 	if(priceSize == 0){
+ 		price = '';
+ 	}
+$('.price').text(price);
+
+});
+});
