@@ -749,11 +749,11 @@
 										tabs-nav__item is-active" data-tab-name="tab-1">
 										<img src="img/icons/form_vertical.png" alt="">
 									</div>
-									<div onclick="myFunctionTwo()" class="forma__orientation-row-item
+									<div onclick="myFunctionOne()" class="forma__orientation-row-item
 									forma__orientation-row-item_two tabs-nav__item " data-tab-name="tab-2">
 										<img src="img/icons/form_gori.png" alt="">
 									</div>
-									<div onclick="myFunctionThree()" class="forma__orientation-row-item
+									<div onclick="myFunctionOne()" class="forma__orientation-row-item
 									forma__orientation-row-item_three tabs-nav__item" data-tab-name="tab-3">
 										<img src="img/icons/form_kvad.png" alt="">
 									</div>
@@ -765,10 +765,10 @@
 								<div class="form__select-titel">
 									Стиль
 								</div>
-								<select class = "select___style" >
+								<select class = "select___style change_price" >
 									<option id="style" value="">Виберіть стиль</option>
-									<option  value="1">Реалізм</option>
-									<option  value="2">Арт</option>
+									<option  value="0">Реалізм</option>
+									<option  value="20">Арт</option>
 								</select>
 							</div>
 							<div class="form__item-select-size">
@@ -776,19 +776,19 @@
 									Розмір
 								</div>
 								<div class="tabs__content">
-									<select class = "option__size option__size_one tab tab-1 is-active">
+									<select class = "option__size option__size_one tab tab-1 is-active change_price">
 										<option value="" selected disablet id ="opt-size1">Виберіть розмір</option>
 										<option value="1" >60 ⨉ 70</option>
 										<option value="2" >80 ⨉ 90</option>
 										<option value="3" >100 ⨉ 120</option>
 									</select>
-									<select class = "option__size option__size_two tab tab-2 ">
+									<select class = "option__size option__size_two tab tab-2 change_price">
 										<option value="" selected disablet id ="opt-size2">Виберіть розмір</option>
 										<option value="4" >60 ⨉ 30</option>
 										<option value="5" >80 ⨉ 40</option>
 										<option value="6" >100 ⨉ 50</option>
 									</select>
-									<select class = "option__size option__size_three tab tab-3">
+									<select class = "option__size option__size_three tab tab-3 change_price">
 										<option value="" selected disablet id ="opt-size3">Виберіть розмір</option>
 										<option value="7" >60 ⨉ 60</option>
 										<option value="8" >80 ⨉ 80</option>
@@ -800,9 +800,9 @@
 
 						</div>
 						<div class="form__column">
-							<div class="form__item-checkbox_one">
+							<div class="form__item-checkbox_one change_price">
 								<label for="Urgency">
-									<input class="custom-checkbox" id="Urgency"type="checkbox">
+									<input class="custom-checkbox" id="Urgency"type="checkbox" value = "50">
 										<span class="cursor">
 											<span class="bold">
 												Терміновість
@@ -811,9 +811,9 @@
 										</span> 
 								</label>
 							</div>
-							<div class="form__item-checkbox_two">
+							<div class="form__item-checkbox_two change_price">
 								<label for="Packaging">
-									<input class="custom-checkbox" id="Packaging" type="checkbox">
+									<input class="custom-checkbox" id="Packaging" type="checkbox" value = "20">
 									<span class="cursor">
 										<span class="bold">
 											Упакування 
