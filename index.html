@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Fotoart</title>
 </head>
@@ -159,13 +160,13 @@
 			<div class="container__tablet">
 				<div class="container__small-tablet">
 					<div class="portfolio__titel">
-						<h2>портфоліо</h2>
+						<h2 data-aos="fade-up">портфоліо</h2>
 					</div>
 					<div class="portfolio-bg">
 							<img src="img/portfolio-bg.png" alt="">
 						</div>
 						<div class="portfolio__row">
-							<div class="portfolio__column">
+							<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="portfolio__column">
 								<div class="portfolio__item">
 									<a href="#">
 										<img src="img/1.png" alt="">
@@ -205,7 +206,7 @@
 								</div>
 								</span>
 							</div>
-							<div class="portfolio__column">
+							<div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="portfolio__column">
 								<div class="portfolio__item">
 									<a href="#">
 										<img src="img/10.png" alt="">
@@ -240,7 +241,7 @@
 								</div>
 								</span>
 							</div>
-							<div class="portfolio__column">
+							<div data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" class="portfolio__column">
 								<div class="portfolio__item">
 									<a href="#">
 										<img src="img/1.png" alt="">
@@ -280,7 +281,7 @@
 								</div>
 								</span>
 							</div>
-							<div class="portfolio__column">
+							<div data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" class="portfolio__column">
 								<div class="portfolio__item">
 									<a href="#">
 										<img src="img/1.png" alt="">
@@ -348,7 +349,8 @@
 				<div class="container__tablet">
 					<div class="container__small-tablet">
 						<div class="portrait__row">
-							<div class="portrait__description portrait__description_one">
+							<div data-aos="fade-up"
+     							  data-aos-duration="2000" class="portrait__description portrait__description_one">
 								<img src="img/66 1.png" alt="" class="portrait__description-img-one">
 								<div class="portrait__description-titel">
 									ПОДАРУЙ СПРАВЖНІЙ ПОРТРЕТ БЛИЗЬКІЙ ЛЮДИНІ
@@ -386,7 +388,7 @@
 							<div class="portrait__image-one">
 								<div class="portrait__image-bg_one">
 									<img class="portrait__img-bg_one" src="img/three_bg1.png" alt="" >
-									<img class="portrait__img-one" src="img/three_img1.png" alt="">
+									<img  class="portrait__img-one" src="img/three_img1.png" alt="">
 									<img src="img/icons/Vector 38.png" alt="" class="portrait__line_one">
 									<img src="img/icons/Vector 38(768px).png" alt="" class="portrait__line_one-tablet">
 						
@@ -395,7 +397,8 @@
 						</div>
 
 						<div class="portrait__row">
-							<div class="portrait__description portrait__description_two">
+							<div data-aos="fade-up"
+     							  data-aos-duration="2000" class="portrait__description portrait__description_two">
 								<img src="img/66 2.png" alt="" class="portrait__description-img-two">
 								<div class="portrait__description-titel">
 									ТІЛЬКИ УЯВІТЬ
@@ -423,7 +426,8 @@
 						</div>
 
 						<div class="portrait__row">
-							<div class="portrait__description portrait__description_three">
+							<div data-aos="fade-up"
+     							  data-aos-duration="2000" class="portrait__description portrait__description_three">
 								<img src="img/66 3.png" alt="" class="portrait__description-img-three">
 								<div class="portrait__description-titel">
 									ПІДГОТОВЛЕНИЙ МАКЕТ УЗГОДИМО З ВАМИ
@@ -456,13 +460,13 @@
 		<div class="container">
 			<div class="photo__content">
 				<div class="photo__content-top">
-					<div class="photo__content-image">
+					<div class="photo__content-image photo__content-image-1 _anim_items">
 						<img src="img/10.png" alt="">
 					</div>
-					<div class="photo__content-image">
+					<div class="photo__content-image photo__content-image-2 _anim_items">
 						<img src="img/11.png" alt="">
 					</div>
-					<div class="photo__content-image">
+					<div class="photo__content-image photo__content-image-3 _anim_items">
 						<img src="img/12.png" alt="">
 					</div>
 				</div>
@@ -599,8 +603,8 @@
 
 	<section class="characteristic">
 		<div class="characteristic__title_bg">
-			<div class="characteristic__title">
-					Характеристики
+			<div data-aos="fade-right" data-aos-duration="1500" class="characteristic__title">
+				Характеристики
 			</div>
 		</div>
 		<div class="container">
@@ -608,10 +612,10 @@
 			<div class="container__small-tablet">	
 					<div class="characteristic__body">
 						<div class="characteristic__row">
-							<div class="characteristic__image">
+							<div data-aos="fade-right" data-aos-duration="800" data-aos-delay="200" class="characteristic__image">
 								<img src="img/14.png" alt="">
 							</div>
-							<div class="characteristic__content">
+							<div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" class="characteristic__content">
 								<ul class="characteristic__list">
 									<li>
 										<img class = "characteristic__galka" src="img/icons/galka.png" alt="">Цифровий поп-арт портрет
@@ -643,86 +647,6 @@
 			</div>
 		</div>
 	</section>
-	<!--
-	<section class="forma">
-		<div class="container">
-			<div class="forma__wrap">
-				<form action="#">
-					<div class="button__wrap">
-						<button class = "forma__download" type="submit">
-							Загрузити фото
-						</button>
-					</div>
-					<div class="forma__row">
-						<div class="forma__select-size">
-							<div class="forma__select-size-titel">
-								Розмір
-							</div>
-							<select class = "option__size">
-								<option value="1">60 ⨉ 30</option>
-								<option value="2">80 ⨉ 40</option>
-								<option value="3">100 ⨉ 50</option>
-							</select>
-						</div>
-						<div class="forma__checkbox_one">
-							<label for="">
-								<input type="checkbox">
-								<span class="bold">Терміновість</span>(Cтандарт 3-5 роб, дні) 2 роб, дня+ 70 грн
-							</label>
-						</div>
-						<div class="forma__orientation">
-							<div class="forma__orientation-titel">
-								Орієнтації
-							</div>
-							<div class="forma__orientation-row">
-								<div class="forma__orientation-row-item">
-									<img src="img/icons/form_vertical.png" alt="">
-								</div>
-								<div class="forma__orientation-row-item">
-									<img src="img/icons/form_gori.png" alt="">
-								</div>
-								<div class="forma__orientation-row-item">
-									<img src="img/icons/form_kvad.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="forma__checkbox">
-							<label for="">
-								<input type="checkbox_two">
-								<span class="bold">Упакування </span>+ 70 грн
-							</label>
-						</div>
-					</div>	
-					<div class="forma__style">
-						<div class="forma__style-titel">
-							Стиль
-						</div>
-						<select class="select___style">
-							<option value="1">Реалізм</option>
-							<option value="2">Арт</option>
-						</select>
-					</div>
-					<div class="forma__buttom">
-						<div class="forma__price">
-							<div class="forma__price-titel">
-								Ціна
-							</div>
-							<div class="forma__prc">
-								
-							</div>
-						</div>
-						<button class = "schedule" type="submit">
-							Заказати
-						</button>
-					</div>
-				</form>
-				<div class="image">
-					<img src="img/img-form.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
--->
 	<section class="forma">
 		<a id="forma"></a>
 		<div class="container">
@@ -908,5 +832,9 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
 </body>
 </html>
