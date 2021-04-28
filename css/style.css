@@ -1407,8 +1407,7 @@ h2:after{
 	height: 400px;
 	padding: 10px;
 }
-
-.photo__content-image-1{
+	.photo__content-image-1{
 	transform: rotate(0deg);
 	position: relative;
 	left: 387px;
@@ -1442,6 +1441,8 @@ h2:after{
 	margin: 96px 0 0 0;
 	right: 50px;
 }
+
+
 /*
 .photo__content-image:first-child{
 	transform: rotate(-8.18deg);
@@ -1476,36 +1477,7 @@ h2:after{
 }
 */
 
-@keyframes first-photo{
-	0%{
-		transform: rotate(0deg);
-		left: 387px;
-		
-	}
-	100%{
-		transform: rotate(-8.18deg);
-		left: 30px;
-		
-	}
-}
-@keyframes two-photo{
-	0%{
-		transform: rotate(0deg);
-	}
-	100%{
-		transform: rotate(-11.89deg);
-	}
-}
-@keyframes three-photo{
-	0%{
-		transform: rotate(0deg);
-		right: 385px;
-	}
-	100%{
-		transform: rotate(14.41deg);
-		right: 50px;
-	}
-}
+
 .photo__content-image img{
 	width: 100%;
 	height: 100%;
@@ -2826,7 +2798,16 @@ form{
 
 .forma__image{
 	min-height: 425px;
+	position: relative;
+	display: flex;
+	justify-content: center;
 
+}
+
+.forma-img{
+	position: absolute;
+	top: 135px;
+   margin: 0 auto;
 }
 
 .forma__image img{
