@@ -179,7 +179,6 @@ $(document).ready(function() {
 $('.change_price').change(function() {
 	priceStyle = Number($('.select___style').val());
 	priceSize = Number($('.option__size.is-active').val());
-	console.log(priceSize);
 	if ($('#Urgency').is(':checked')){
 	var priceFast = Number($('#Urgency').val());
 		//priceFast  = 20;
@@ -203,5 +202,47 @@ $('.change_price').change(function() {
  	}
 $('.price').text(price);
 
+});
+});
+
+$(document).ready(function() {
+$('.change_price').change(function() {
+	valueSize = Number($('.option__size.is-active').val());
+	if(valueSize === 1){
+		$('.forma-img').width(60);
+		$('.forma-img').height(70);
+	} 
+	else if(valueSize === 2){
+		$('.forma-img').width(80);
+		$('.forma-img').height(90);
+	}
+	else if(valueSize === 3){
+		$('.forma-img').width(100);
+		$('.forma-img').height(120);
+	}
+	else if(valueSize === 4){
+		$('.forma-img').width(60);
+		$('.forma-img').height(30);
+	}
+	else if(valueSize === 5){
+		$('.forma-img').width(80);
+		$('.forma-img').height(40);
+	}
+	else if(valueSize === 6){
+		$('.forma-img').width(100);
+		$('.forma-img').height(50);
+	}
+	else if(valueSize === 7){
+		$('.forma-img').width(60);
+		$('.forma-img').height(60);
+	}
+	else if(valueSize === 8){
+		$('.forma-img').width(80);
+		$('.forma-img').height(80);
+	}
+	else if(valueSize === 9){
+		$('.forma-img').width(100);
+		$('.forma-img').height(100);
+	}
 });
 });
